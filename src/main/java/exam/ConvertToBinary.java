@@ -1,9 +1,33 @@
-package exam;
+import java.io.*;
+ 
 
 public class ConvertToBinary {
 
-  public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
-    return "";
-  }
+  public static int toBinary(final int n) {
+    int B_Number = 0;
+    int cnt = 0;
+    while (N != 0)
+    {
+        int rem = N % 2;
+        double c = Math.pow(10, cnt);
+        B_Number += rem * c;
+        N /= 2;
+ 
+        // Count used to store exponent value
+        cnt++;
+    }
+ 
+    return B_Number;
 }
+ 
+
+public static void main (String[] args)
+{
+     
+    int N = 17;
+    System.out.println (decimalToBinary(N));
+ 
+}
+}
+ 
+ 
